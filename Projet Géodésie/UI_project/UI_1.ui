@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1277</width>
+    <height>788</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{ background-color : #fff}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget { 
+background-image: url(:/newPrefix/O9FG4R0.jpg) ;
+background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>1251</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0" columnstretch="0,0">
+     <property name="horizontalSpacing">
+      <number>3</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>2</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QFrame" name="frame_1">
+       <property name="styleSheet">
+        <string notr="true">#frame_1 { border : 2px solid  rgb(255, 248, 144);
+ border-raduis : 20px
+}
+
+#frame_1:hover { border : 5px solid  #add8e6}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="Ellipsoide_paramters">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>521</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#Ellipsoide_paramters {
+background-color:  rgb(255, 254, 210);
+
+border-color : #000;
+border-radius: 30%;
+ }
+
+#Ellipsoide_paramters:hover{
+	background-color: #add8e6;
+color : #fff;
+opacity : 0.5 ;
+	transition : 0.5s;
+	border-radius: 40%;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Calcul des Paramètres d'éllipsoïde et Transformation de Coordonnées</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QFrame" name="frame_3">
+       <property name="styleSheet">
+        <string notr="true">#frame_3 { border : 2px solid  rgb(255, 248, 144);
+ border-raduis : 20px
+}
+
+#frame_3:hover { border : 5px solid  #add8e6}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="Longueur_Arc_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>511</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#Longueur_Arc_2 {
+background-color:  rgb(255, 254, 210);
+
+border-radius: 30%;
+ }
+
+#Longueur_Arc_2:hover{
+	background-color: #add8e6;
+	color: #fff;
+	transition : 0.5s;
+	border-radius: 40%;
+}</string>
+        </property>
+        <property name="text">
+         <string>Longeur d'Arc (suivant Parallèle/Meridien)</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QFrame" name="frame_2">
+       <property name="styleSheet">
+        <string notr="true">#frame_2 { border : 2px solid  rgb(255, 248, 144);
+ border-raduis : 20px
+}
+
+#frame_2:hover { border : 5px solid  #add8e6}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="Angle">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>521</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#Angle {
+background-color:  rgb(255, 254, 210);
+
+border-radius: 30%;
+ }
+
+#Angle:hover{
+	background-color: #add8e6;
+color : #fff;
+
+	transition : 0.5s;
+	border-radius: 40%;
+}</string>
+        </property>
+        <property name="text">
+         <string>Relation Entre les Latitudes ( φ, β, ψ )</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QFrame" name="frame_5">
+       <property name="styleSheet">
+        <string notr="true">#frame_5 { border : 2px solid  rgb(255, 248, 144);
+ border-raduis : 20px
+}
+
+#frame_5:hover { border : 5px solid  #add8e6}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="pb_elliipsoide">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>521</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pb_elliipsoide {
+background-color:  rgb(255, 254, 210);
+
+border-radius: 30%;
+ }
+
+#pb_elliipsoide:hover{
+background-color: #add8e6;
+	color: #fff;
+	transition : 0.5s;
+	border-radius: 40%;
+}</string>
+        </property>
+        <property name="text">
+         <string>Problème géodisique sur l'éllipsoïde</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QFrame" name="frame_6">
+       <property name="styleSheet">
+        <string notr="true">#frame_6 { border : 2px solid  rgb(255, 248, 144);
+ border-raduis : 20px
+}
+
+#frame_6:hover { border : 5px solid  #add8e6}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="pb_sphere">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>501</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pb_sphere {
+background-color:  rgb(255, 254, 210);
+
+border-radius: 30%;
+ }
+
+#pb_sphere:hover{
+	background-color: #add8e6;
+	color: #fff;
+	transition : 0.5s;
+	border-radius: 40%;
+}</string>
+        </property>
+        <property name="text">
+         <string>Problème géodisique sur la Sphère</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QFrame" name="frame_4">
+       <property name="styleSheet">
+        <string notr="true">#frame_4 { border : 2px solid  rgb(255, 248, 144);
+ border-raduis : 20px
+}
+
+#frame_4:hover { border : 5px solid  #add8e6}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="Surface">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>521</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#Surface {
+background-color:  rgb(255, 254, 210);
+
+border-radius: 30%;
+ }
+
+#Surface:hover{
+background-color: #add8e6;
+	color: #fff;
+	transition : 0.5s;
+	border-radius: 40%;
+}</string>
+        </property>
+        <property name="text">
+         <string>Calcul des Surface Ellipsoïdales</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2"/>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout"/>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>25</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::CustomContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label{
+color: rgb(255, 200, 0);}
+
+</string>
+    </property>
+    <property name="text">
+     <string>GeoCalc Pro</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>1251</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_2{
+color:  #add8e6;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Votre Outil de Calculs Géodésiques</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>710</y>
+      <width>1251</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_3{
+color:  #add8e6;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Créé par OUAZIZ WALID</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>730</y>
+      <width>1251</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_4{
+color:  #add8e6;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Votre outil de confiance pour des calculs géodésiques précis et faciles d'utilisation</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../icone.qrc"/>
+ </resources>
+ <connections/>
+</ui>
